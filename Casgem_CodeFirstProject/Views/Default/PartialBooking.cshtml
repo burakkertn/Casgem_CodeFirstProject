@@ -1,4 +1,5 @@
-﻿<section class="w3l-call-to-action_9">
+﻿|@model Casgem_CodeFirstProject.DAL.Entities.Booking
+<section class="w3l-call-to-action_9">
     <div class="call-w3">
         <div class="container">
             <div class="booking-form-content">
@@ -8,59 +9,59 @@
                     </h3>
                     <p class="tiltle-para editContent ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fuga sit illo modi aut aspernatur tempore laboriosam saepe dolores eveniet.</p>
                 </div>
-                <form action="search-results.html" method="post" class="booking-form">
+                <form  method="post" class="booking-form">
                     <div class="row book-form">
                         <div class="form-input col-md-4">
                             <label>Ad Soyad</label>
-                            <input type="text" name="" placeholder="Ad Soyad" required="">
+                            <input type="text" name="CustomerName" placeholder="Ad Soyad" required="">
                         </div>
                         <div class="form-input col-md-4">
                             <label>Ülkeler</label>
-                            <select name="selectpicker" class="selectpicker">
-                                <option value="">Any</option>
-                                <option value="africa">Africa</option>
-                                <option value="america">America</option>
-                                <option value="asia">Asia</option>
-                                <option value="eastern-europe">Eastern Europe</option>
-                                <option value="europe">Europe</option>
-                                <option value="south-america">South America</option>
+                            <select name="Mail" class="selectpicker">
+                                <option value="">Seç</option>
+                                <option value="africa">Afrika</option>
+                                <option value="america">Amerika</option>
+                                <option value="asia">Aysa</option>
+                                <option value="eastern-europe">Güney Amerika</option>
+                                <option value="europe">Avrupa</option>
+                                <option value="south-america">Balkanlar</option>
                             </select>
 
                         </div>
                         <div class="form-input col-md-4">
                             <label>Aktivite</label>
-                            <select name="activity" class="selectpicker">
-                                <option value="">Any</option>
-                                <option value="city-tours">City Tours</option>
-                                <option value="cultural-thematic-tours">Cultural &amp; Thematic Tours</option>
-                                <option value="family-friendly-tours">Family Friendly Tours</option>
-                                <option value="holiday-seasonal-tours">Holiday &amp; Seasonal Tours</option>
-                                <option value="indulgence-luxury-tours">Indulgence &amp; Luxury Tours</option>
-                                <option value="outdoor-activites">Outdoor Activites</option>
-                                <option value="relaxation-tours">Relaxation Tours</option>
-                                <option value="wild-adventure-tours">Wild &amp; Adventure Tours</option>
+                            <select name="Destination" class="selectpicker">
+                                <option value="">Seç</option>
+                                <option value="city-tours">Şehir Turu</option>
+                                <option value="cultural-thematic-tours">Kültürel &amp; Tematik Turlar</option>
+                                <option value="family-friendly-tours">Aile Dostu Turlar</option>
+                                <option value="holiday-seasonal-tours">Tatil &amp; Sezonluk Turlar</option>
+                                <option value="indulgence-luxury-tours">Lüks Turlar</option>
+                                <option value="outdoor-activites">Outdoor Aktivitleri</option>
+                                <option value="relaxation-tours">Rahat Turlar</option>
+                                <option value="wild-adventure-tours">Vahşi &amp; Macera Turu</option>
                             </select>
 
                         </div>
                         <div class="form-input col-md-4 mt-3">
 
                             <label>Duration</label>
-                            <select name="duration" class="selectpicker">
-                                <option value="">Any</option>
-                                <option value="1">1 Day Tour</option>
-                                <option value="2">2-4 Days Tour</option>
-                                <option value="5">5-7 Days Tour</option>
-                                <option value="7">7+ Days Tour</option>
+                            <select name="Duration" class="selectpicker">
+                                <option value="">Seç</option>
+                                <option value="1">1 Gün</option>
+                                <option value="2">2-4 Gün</option>
+                                <option value="5">5-7 Gün</option>
+                                <option value="7">7+ Gün</option>
                             </select>
 
                         </div>
                         <div class="form-input col-md-4 mt-3">
-                            <label>Date</label>
-                            <input type="date" name="" placeholder="Date" required="">
+                            <label>Tarih</label>
+                            <input type="date" name="BookingDate" placeholder="Date" required="">
                         </div>
                         <div class="bottom-btn col-md-4 mt-3">
-                            <label>Submit</label>
-                            <button class="btn btn-style btn-primary w-100 btn-style">Submit</button>
+                   
+                            <button class="btn btn-style btn-primary w-100 btn-style">Onayla</button>
                         </div>
                     </div>
                 </form>

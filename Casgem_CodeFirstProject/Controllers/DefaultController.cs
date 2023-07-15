@@ -1,4 +1,5 @@
 ﻿using Casgem_CodeFirstProject.DAL.Context;
+using Casgem_CodeFirstProject.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +17,12 @@ namespace Casgem_CodeFirstProject.Controllers
         }
         public PartialViewResult PartialHead()
         {
+          
             return PartialView();
         }
         public PartialViewResult PartialNavbar()
         {
+            ViewBag.Telefon = travelContext.Iletisims.Select(x => x.Telefon).FirstOrDefault();
             return PartialView();
         }     
         public PartialViewResult PartialSliderScript()
@@ -28,15 +31,26 @@ namespace Casgem_CodeFirstProject.Controllers
         }
         public PartialViewResult PartialSlider()
         {
-            return PartialView();
+            var values = travelContext.Abouts.ToList();
+            return PartialView(values);
         }
+        [HttpGet]
         public PartialViewResult PartialBooking()
         {
+          
+            return PartialView();
+        }
+        [HttpPost]
+        public PartialViewResult PartialBooking(Booking p)
+        {
+           travelContext.Bookings.Add(p);
+            travelContext.SaveChanges();
             return PartialView();
         }
         public PartialViewResult PartialFeature()
         {
-            return PartialView();
+            var values = travelContext.Features.ToList();
+            return PartialView(values);
         }
         public PartialViewResult PartialDestinations()
         {
@@ -45,7 +59,8 @@ namespace Casgem_CodeFirstProject.Controllers
         }
         public PartialViewResult PartialAbout()
         {
-            return PartialView();
+            var values = travelContext.Abouts.ToList();
+            return PartialView(values);
         }
         public PartialViewResult PartialBookingCover()
         {
@@ -60,5 +75,6 @@ namespace Casgem_CodeFirstProject.Controllers
         {
             return PartialView();
         }
+      
     }
 }
