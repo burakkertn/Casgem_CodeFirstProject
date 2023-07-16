@@ -1,0 +1,21 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.Gallery
+@{
+    ViewBag.Title = "UpdateGallerie";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+<h2>Hizmet Güncelleme Sayfası</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.GalleryID)
+    @Html.Label("Ad")
+    @Html.TextBoxFor(x => x.GalleryURL, new { @class = "form-control" })
+    <br />
+ 
+
+    <button class="btn btn-success">Fotoğraf Güncelle</button>
+</form>
+
+

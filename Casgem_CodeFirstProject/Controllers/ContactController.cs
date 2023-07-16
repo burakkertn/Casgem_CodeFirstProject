@@ -30,5 +30,11 @@ namespace Casgem_CodeFirstProject.Controllers
         {
             return PartialView();
         }
+        public PartialViewResult Map()
+        {
+            var values = travelContext.Iletisims.ToList();
+            return PartialView(values);
+  
+        }
     }
 }

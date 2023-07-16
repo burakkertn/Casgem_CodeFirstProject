@@ -129,6 +129,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\Admin_iletisimController.cs" />
+    <Compile Include="Controllers\Admin_AboutController.cs" />
+    <Compile Include="Controllers\Admin_GaleriController.cs" />
+    <Compile Include="Controllers\Admin_BookingController.cs" />
     <Compile Include="Controllers\Admin_GuideController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
@@ -435,7 +439,6 @@
     <Content Include="Templates\sidebar-03\scss\bootstrap\_variables.scss" />
     <Content Include="Templates\sidebar-03\scss\style.scss" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\Admin_Guide\Index.cshtml" />
     <Content Include="Views\Admin_Guide\AddGuide.cshtml" />
     <Content Include="Views\Admin_Guide\GuideUpdate.cshtml" />
     <Content Include="Templates\Report-Login-Free\fonts\fontawesome-webfont.eot" />
@@ -520,6 +523,17 @@
     <Content Include="Views\About\Travel.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\Dess.cshtml" />
+    <Content Include="Views\Contact\Map.cshtml" />
+    <Content Include="Views\Admin\Deneme.cshtml" />
+    <Content Include="Views\Admin_Guide\Index.cshtml" />
+    <Content Include="Views\Admin_About\Index.cshtml" />
+    <Content Include="Views\Admin_About\AboutUpdate.cshtml" />
+    <Content Include="Views\Admin_Booking\Index.cshtml" />
+    <Content Include="Views\Admin_Galeri\Index.cshtml" />
+    <Content Include="Views\Admin_Galeri\UpdateGallerie.cshtml" />
+    <Content Include="Views\Admin_Galeri\AddGallerie.cshtml" />
+    <Content Include="Views\Admin_iletisim\Index.cshtml" />
+    <Content Include="Views\Admin_iletisim\IletisimUpdate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

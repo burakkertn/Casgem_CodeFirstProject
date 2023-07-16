@@ -9,56 +9,56 @@ using System.Web.Services.Description;
 
 namespace Casgem_CodeFirstProject.Controllers
 {
-    public class Admin_GuideController : Controller
+    public class Admin_GaleriController : Controller
     {
         
         TravelContext travelContext = new TravelContext();
-        // GET: Admin_Guide
         public ActionResult Index()
         {
-            var values = travelContext.Guides.ToList();
+            var values = travelContext.Galleries.ToList();
             return View(values);
         }
-        [HttpGet]
-        public ActionResult AddGuide()
+        public ActionResult AddGallerie()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult AddGuide(Guide p)
+        public ActionResult AddGallerie(Gallery p)
         {
-            travelContext.Guides.Add(p);
+            travelContext.Galleries.Add(p);
             travelContext.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        public ActionResult DeleteGuide(int id)
+
+
+        public ActionResult DeleteGallerie(int id)
         {
-            var values =travelContext.Guides.Find(id);
-            travelContext.Guides.Remove(values);
+            var values =travelContext.Galleries.Find(id);
+            travelContext.Galleries.Remove(values);
             travelContext.SaveChanges();
             return RedirectToAction("Index");
         }
-
-        [HttpGet]
-        public ActionResult GuideUpdate(int id)
+        public ActionResult UpdateGallerie(int id)
         {
-            var values = travelContext.Guides.Find(id);
+            var values = travelContext.Galleries.Find(id);
 
             return View(values);
         }
 
         [HttpPost]
-        public ActionResult GuideUpdate(Guide p)
+        public ActionResult UpdateGallerie(Gallery p)
         {
-            var values = travelContext.Guides.Find(p.GuideID);
-            values.GuideName = p.GuideName;
-            values.GuideTitle = p.GuideTitle;
-            values.GuideImageUrl = p.GuideImageUrl;
-           
+            var values = travelContext.Galleries.Find(p.GalleryID);
+            values.GalleryURL = p.GalleryURL;
+        
+
             travelContext.SaveChanges();
             return RedirectToAction("Index");
         }
+
+
+
     }
 }

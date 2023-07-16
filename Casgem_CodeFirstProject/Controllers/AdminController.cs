@@ -13,5 +13,10 @@ namespace Casgem_CodeFirstProject.Controllers
         {
             return View();
         }
+        public ActionResult Deneme()
+        {
+            return View();
+        }
+
     }
 }
