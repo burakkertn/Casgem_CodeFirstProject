@@ -4,6 +4,7 @@
 <p>-UI</p>
 <p>-Admin paneli</p>
 <p>-Login Paneli</p>
+<p>-404 Sayfası</p>
 
 <h1>Proje'de kullanılan Teknolojiler</h1>
 <p>-.NET Framework</p>
@@ -37,6 +38,10 @@
 
 ![5](https://github.com/burakkertn/Casgem_CodeFirstProject/assets/99614754/8fa5f3c4-0ccf-4e67-860f-5280ddb32ae8)
 
+## 404 Sayfası
+
+
+![gg](https://github.com/burakkertn/Casgem_CodeFirstProject/assets/99614754/7f961b47-ecc7-4900-ab0a-9830e189f355)
 
 
 # Video
